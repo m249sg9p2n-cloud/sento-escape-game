@@ -52,13 +52,13 @@ button{font:inherit}
 </div>
 <script>
 (()=>{
-const A='assets/';
+const A='';
 const imgs={
  title:'銭湯からの脱出_夜の番台.png',hub:'夜の銭湯_静かな脱衣所.png',locker:'湯屋の木製ロッカー14番.png',
  entrance:'夕暮れの銭湯玄関と下足箱.png',counterFront:'夜の銭湯番台と静かな入口.png',counter:'銭湯の番台裏と従業員専用通路.png',
  keys:'銭湯の脱衣鍵返却所.png',bath:'富士山銭湯の四つの湯槽.png',bathDetail:'銭湯の浴槽設定案内板.png',
- sauna:'静寂の和風サウナ_интерьер.png',saunaDetail:'木製サウナの温もりとタイマー.png',rest:'夜の銭湯休憩室と牛乳瓶棚.png',restDetail:'湯上がり牛乳びん返却所.png',
- panel:'銭湯の閉店点検表.png',route:'銭湯の閉店巡回図.png',evac:'銭湯ロビーの避難経路図.png',corridor:'銭湯の静かな裏通路.png',backdoor:'銭湯裏口の夜道.png',openDoor:'夜の銭湯裏口とつながったスマホ.png',end:'銭湯の脱出成功_月夜の帰り道.png'};
+ sauna:'静寂の和風サウナ_интерьер.png',saunaDetail:'木製サウナの温もりとタイマー.png',rest:'夜の銭湯休憩室と牛乳瓶棚.png',restDetail:'湯上がり牛乳びん返却所.png',
+ panel:'銭湯の閉店点検表.png',route:'銭湯の閉店巡回図.png',evac:'銭湯ロビーの避難経路図.png',corridor:'銭湯の静かな裏通路.png',backdoor:'銭湯裏口の夜道.png',openDoor:'夜の銭湯裏口とつながったスマホ.png',end:'銭湯の脱出成功_月夜の帰り道.png'};
 const fresh=()=>({scene:'hub',history:[],inventory:['ロッカーキー14'],lockerOpened:false,shoehorn:false,gateOpen:false,counterSeen:false,clues:{locker:false,bath:false,sauna:false,rest:false},panel:{locker:0,bath:'water',sauna:'up',rest:'white',verified:false,opened:false,seq:[]},backdoorKey:false,escaped:false});
 let s=fresh(),dialogQueue=[],dialogResolve=null;
 const $=q=>document.querySelector(q),bg=$('#bg'),hot=$('#hotspots'),app=$('#app'),overlay=$('#overlay'),card=$('#overlayCard'),dialog=$('#dialog'),fade=$('#fade'),titleLayer=$('#titleLayer'),sceneTitle=$('#sceneTitle'),endingBtn=$('#endingBtn');
